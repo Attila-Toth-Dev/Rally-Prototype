@@ -869,20 +869,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77be4f37d9fd673428e6231a82819df7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wheelColliders:
+  wheels:
   - {fileID: 7496110531249895781}
   - {fileID: 6410480893835868717}
   - {fileID: 8076747994285243700}
   - {fileID: 5760533772124049328}
-  maxHorsepower: 100
+  maxHorsepower: 1000
   maxSteerAngle: 45
   steeringSensitivity: 2
-  moveCarReference: {fileID: 7106399321779860863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  brakeForce: 1000
+  accelCarReference: {fileID: 7106399321779860863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  decelCarReference: {fileID: -2221296029113975471, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   steerCarReference: {fileID: -2816942942204434640, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  moveAmount: 0
+  handbrakeCarReference: {fileID: 7093208040857786490, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  accelAmount: 0
+  decelAmount: 0
   steerAmount: 0
-  currentMove: 0
-  currentSteer: 0
+  isHandbraking: 0
 --- !u!1 &8736563673847850384
 GameObject:
   m_ObjectHideFlags: 0

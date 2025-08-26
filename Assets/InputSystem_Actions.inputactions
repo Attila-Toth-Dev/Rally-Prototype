@@ -6,7 +6,7 @@
             "id": "df70fa95-8a34-4494-b137-73ab6b9c7d37",
             "actions": [
                 {
-                    "name": "Move",
+                    "name": "Accelerate",
                     "type": "Button",
                     "id": "f4604e8a-d28f-4229-ac97-a9c421281a33",
                     "expectedControlType": "",
@@ -18,10 +18,28 @@
                     "name": "Steer",
                     "type": "Value",
                     "id": "72f67f4b-6e1f-4486-bd64-cbbf2a9be9c4",
-                    "expectedControlType": "",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Handbrake",
+                    "type": "Button",
+                    "id": "91d5b874-ea5b-42e8-bb43-635ada881dbb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Decelerate",
+                    "type": "Button",
+                    "id": "9218bb55-3eb1-4900-8455-a3c8f5c2cee5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -32,7 +50,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Move",
+                    "action": "Accelerate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c51e6288-32c5-489b-b4f5-8553a0d80929",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -44,6 +73,39 @@
                     "processors": "",
                     "groups": ";Gamepad",
                     "action": "Steer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "89dd6922-8b1c-4d6e-a7c7-8bf4228babf2",
+                    "path": "<Gamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Steer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf4df6ac-d92f-487e-a5dc-8a2313699e85",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Handbrake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "020bda89-c90c-4d89-b4d3-b63fdea8224d",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Decelerate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
